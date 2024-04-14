@@ -82,7 +82,7 @@ ul{
 }
 
 .fa-bars, .fa-xmark{
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: hsl(10, 100%, 50%);
   display: none;
 }
@@ -93,7 +93,7 @@ ul{
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 50px;
+  top: 70px;
   right: 0;
   width: 100%;
   height: 500px;
@@ -157,6 +157,14 @@ ul{
   font-size: 2rem;
   font-weight: 500;
   padding: 30px 0 40px 0;
+}
+.fa-arrow-down{
+  text-align: center;
+  display: none;
+  width: 100%;
+  margin-top: 80px;
+  font-size: 2rem;
+  color: hsl(10, 100%, 50%);
 }
 .hero-cta{
   background-color: hsl(10, 100%, 50%);
@@ -239,9 +247,13 @@ ul{
 }
 .list-1 li{
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.list-1 li .list-text{
   font-size: 2rem;
 }
-.list-1 li span{
+.list-1 li .tick{
   padding: 10px 15px;
   border: none;
   border-radius: 100%;
@@ -348,13 +360,24 @@ ul{
   display: flex;
   justify-content: space-between;
 }
+.footer-icons{
+  padding-bottom: 10px;
+  border-bottom: 3px solid hsl(10, 100%, 50%);
+}
 .footer-icons i{
   margin-left: 30px;
   color: #fff;
   font-size: 3rem;
 }
+.footer-menu li{
+  padding-bottom: 20px;
+}
+.footer-menu li a{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 .copyright-section{
-  text-align: center;
   color: #fff;
   font-size: 1.3rem;
   font-weight: 500;
@@ -372,25 +395,111 @@ ul{
   .fa-bars{
     display: block;
   }
+  
+  .header{
+    height: 70px;
+  }
+.logo{
+  font-size: 1.6rem;
+}
+  
+.hero-section{
+  background: linear-gradient(#00b6, #00b6), url(images/couple-painting-reverted.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  border-bottom-right-radius: 0;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+.hero-heading{
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.hero-text{
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px 0 60px 0;
+  text-align: center;
+}
+.hero-cta{
+  background-color: hsl(10, 100%, 50%);
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+.fa-arrow-down{
+  display: block;
+}
+  
   .about-flex{
     flex-direction: column;
   }
   .about-flex img{
     order: 2;
-    width: 600px;
+    width: 300px;
   }
-  .about-heading{
-    font-size: 1.5rem;
+  .about-section .heading-2{
+    font-size: 1.4rem;
+  }
+  .services-section .services-heading{
+    font-size: 1.4rem;
+  }
+  .about-flex img{
+    order: 2;
   }
   .about-text{
     order: 1;
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+  .card-lead{
+    font-size: 1.2rem;
+  }
+  .card-text{
+    font-size: 0.9rem;
+  }
+  
+  .list-1 li .tick{
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .list-1 li .list-text{
+    font-size: 1.2rem;
+  }
+  
+  .form-wrapper{
+    width: 100%;
+    padding: 20px;
+  }
+  .form-group{
+    margin-bottom: 10px;
+  }
+  .form-lead{
+    font-size: 1.5rem;
+  }
+  .form-text{
+    font-size: 1rem;
+  }
+  .form .button{
+    font-size: 1.2rem;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1200px){
-  .about-heading{
-    font-size: 2.5rem;
+@media (max-width: 1200px){
+  .heading-2{
+    font-size: 2rem;
   }
   .about-flex img{
     width: 300px;
@@ -399,5 +508,18 @@ ul{
   .about-text{
     order: 1;
     font-size: 1.5rem;
+  }
+  
+  .list-1 li .tick{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+  .list-1 li .list-text{
+    font-size: 1.5rem;
+  }
+  
+  .form-wrapper{
+    width: 100%;
+    padding: 20px;
   }
 }
